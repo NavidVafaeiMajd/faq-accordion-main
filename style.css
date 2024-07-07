@@ -52,8 +52,10 @@ b{
     padding: 0 18px;
     background-color: white;
     display: none;
-    overflow: hidden;
     color: hsl(292, 16%, 49%);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
   }
   #main-content{
     top: 25%;
