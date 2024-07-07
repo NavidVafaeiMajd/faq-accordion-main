@@ -54,13 +54,12 @@ b{
     display: none;
     color: hsl(292, 16%, 49%);
     max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.2s ease-in-out;
 
   }
   #main-content{
     top: 25%;
-    left: 25%;
+    left: 20%;
     position: fixed;
     width: 50%;
     background-color: white;
@@ -78,4 +77,29 @@ b{
 
 .active:after {
   content: url(assets/images/icon-minus.svg); /* Unicode character for "minus" sign (-) */
+}
+
+@media screen and (max-width:1440px) {
+
+    div#main-content {
+        position: fixed;
+        width: 80%;
+        left: 10%;
+        padding: 5px;
+        margin: auto;
+        margin-top: 0%;
+    }
+}
+@media screen and (max-width:700px) {
+    body{
+        overflow: scroll !important;
+
+        background-image: url(assets/images/background-pattern-mobile.svg);
+    }
+    #main-content{
+        top: 15%;
+        overflow: scroll;
+
+      }
+
 }
