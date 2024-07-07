@@ -56,6 +56,7 @@ b{
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+
   }
   #main-content{
     top: 25%;
@@ -69,3 +70,12 @@ b{
   #heading-main-content{
     display: flex;
   }
+.accordion:after {
+  content: url(assets/images/icon-plus.svg); /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  float: right;
+}
+
+.active:after {
+  content: url(assets/images/icon-minus.svg); /* Unicode character for "minus" sign (-) */
+}
